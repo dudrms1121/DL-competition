@@ -25,6 +25,8 @@
 
 <img width="666" height="306" alt="image" src="https://github.com/user-attachments/assets/681c1351-bc54-46ee-8421-d7931ee94da1" />
 
+
+
 - 다중공선성 해결: 상관관계 분석을 통해 Annual_Income과 Monthly_Inhead_Salary 간의 극도로 높은 상관관계(0.99)를 확인하고, 중복 정보를 제거하여 모델의 과적합 위험을 방지했습니다. 
 
 ---
