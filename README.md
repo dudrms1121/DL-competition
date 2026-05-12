@@ -45,7 +45,7 @@
 
 #### 2. 변수 간 상관관계 히트맵 분석
 
-<img width="1087" height="1007" alt="image" src="https://github.com/user-attachments/assets/cfae3c48-f911-42e2-9531-9d3f48e921e2" />
+<img width="600" height="550" alt="image" src="https://github.com/user-attachments/assets/cfae3c48-f911-42e2-9531-9d3f48e921e2" />
 
 해석: 
 
