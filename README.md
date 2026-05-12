@@ -27,19 +27,23 @@
 
 ---
 ### EDA 및 해석
-<img width="560" height="427" alt="image" src="https://github.com/user-attachments/assets/48717dcf-f18c-488f-9d7e-aee2b316a45b" />
+<img width="558" height="393" alt="image" src="https://github.com/user-attachments/assets/245d6596-d62d-41c9-bb79-98431e440094" />
 
-#### 보유 상품 수 분포 분석
+#### 1. 신용 등급 클래스 분포 분석
 
-- 해석
-1. 전체 고객의 약 95% 이상이 1개 또는 2개의 상품만을 보유하고 있습니다.
-2. 상품을 3개 이상 보유한 다건 가입자의 비중은 매우 낮으며, 4개 이상 보유자는 극소수에 불과합니다.
+전체 데이터에서 Standard(2) 등급의 비중이 가장 높으며, Poor(1), Good(0) 순으로 분포되어 있습니다.
 
-- 비즈니스 인사이트
-1. 대다수의 고객이 단일 혹은 소수의 상품만을 이용하는 '단순 거래 고객' 단계에 머물러 있어, 타사로의 이탈 가능성이 높은 상태입니다.
-2. 교차 판매 전략의 부재: 고객당 보유 상품 수를 늘려 이탈 방어막을 형성해야 합니다.
+클래스 간 불균형이 존재하므로, 학습 시 데이터 분할 과정에서 stratify 옵션을 적용하여 클래스 비율을 유지했습니다.
 
-<img width="552" height="437" alt="image" src="https://github.com/user-attachments/assets/4b7c5a08-8121-48e1-98b2-5f26e8b2c7f4" />
+비즈니스 인사이트:
+
+가장 적은 비중을 차지하는 Good 등급 고객을 확충하기 위한 우대 금리 상품 기획이 필요합니다.
+
+<img width="1087" height="1007" alt="image" src="https://github.com/user-attachments/assets/cfae3c48-f911-42e2-9531-9d3f48e921e2" />
+
+#### 2. 변수 간 상관관계 히트맵 분석
+
+
 
 #### 고객 연령대 분포 분석
 - 해석
