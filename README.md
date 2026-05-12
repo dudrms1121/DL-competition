@@ -23,6 +23,9 @@
 
 - 인코딩 및 스케일링: 범주형 변수는 LabelEncoder를 통해 수치화하였으며, 수치형 변수는 StandardScaler를 적용하여 모든 피처가 동일한 스케일 범위 내에서 학습되도록 표준화했습니다.
 
+<img width="666" height="306" alt="image" src="https://github.com/user-attachments/assets/681c1351-bc54-46ee-8421-d7931ee94da1" />
+
+
 - 다중공선성 해결: 상관관계 분석을 통해 Annual_Income과 Monthly_Inhead_Salary 간의 극도로 높은 상관관계(0.99)를 확인하고, 중복 정보를 제거하여 모델의 과적합 위험을 방지했습니다. 
 
 ---
@@ -38,10 +41,6 @@
 
 클래스 간 불균형이 존재하므로, 학습 시 데이터 분할 과정에서 stratify 옵션을 적용하여 클래스 비율을 유지했습니다.
 
-비즈니스 인사이트:
-
-가장 적은 비중을 차지하는 Good 등급 고객을 확충하기 위한 우대 금리 상품 기획이 필요합니다.
-
 #### 2. 변수 간 상관관계 히트맵 분석
 
 <img width="1087" height="1007" alt="image" src="https://github.com/user-attachments/assets/cfae3c48-f911-42e2-9531-9d3f48e921e2" />
@@ -52,14 +51,10 @@
 
 특히 부채 관련 변수들이 신용 점수와 밀접하게 연동되어 있음을 확인했습니다.
 
-비즈니스 인사이트:
-
-단순 소득 수치보다 부채 상환 능력 및 연체 이력이 신용 등급을 가르는 결정적 잣대이므로, 이를 집중 관리하는 모니터링 시스템 구축이 중요합니다.
-
 ---
-### AutoML – Hyperparameter Tuning – Stacking Pipe – Shap value
+### TabNet 모델 구축 및 하이퍼파라미터 최적화
 
-##### 1. AutoML & Model Selection
+##### 1. 모델 선정: TabNetClassifier
 
 <img width="980" height="559" alt="image" src="https://github.com/user-attachments/assets/8964e7be-adce-4f09-aa22-eb195f67087d" />
 
