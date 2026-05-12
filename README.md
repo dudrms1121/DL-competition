@@ -27,9 +27,10 @@
 
 ---
 ### EDA 및 해석
-<img width="558" height="393" alt="image" src="https://github.com/user-attachments/assets/245d6596-d62d-41c9-bb79-98431e440094" />
 
 #### 1. 신용 등급 클래스 분포 분석
+
+<img width="558" height="393" alt="image" src="https://github.com/user-attachments/assets/245d6596-d62d-41c9-bb79-98431e440094" />
 
 전체 데이터에서 Standard(2) 등급의 비중이 가장 높으며, Poor(1), Good(0) 순으로 분포되어 있습니다.
 
@@ -39,20 +40,18 @@
 
 가장 적은 비중을 차지하는 Good 등급 고객을 확충하기 위한 우대 금리 상품 기획이 필요합니다.
 
-<img width="1087" height="1007" alt="image" src="https://github.com/user-attachments/assets/cfae3c48-f911-42e2-9531-9d3f48e921e2" />
-
 #### 2. 변수 간 상관관계 히트맵 분석
 
+<img width="1087" height="1007" alt="image" src="https://github.com/user-attachments/assets/cfae3c48-f911-42e2-9531-9d3f48e921e2" />
 
+소득 수준, 부채 규모, 연체 여부가 신용 등급 결정에 가장 핵심적인 영향을 미치는 변수임을 시사합니다.
 
-#### 고객 연령대 분포 분석
-- 해석
-1. 데이터 내 고객 연령층은 30대 초반에서 40대 초반에 가장 밀집되어 있는 '항아리형' 분포를 보입니다.
-2. 20대 초반부터 급격히 유입이 증가하다가, 40대 중반을 기점으로 완만하게 감소하는 추세를 보입니다.
+특히 부채 관련 변수들이 신용 점수와 밀접하게 연동되어 있음을 확인했습니다.
 
-- 비즈니스 인사이트
-1. 현재 우리 은행의 주력 고객층은 경제 활동이 가장 활발한 3040 세대임을 알 수 있습니다.
-2. 20대 초반의 가파른 상승 곡선은 잠재 고객 확보 가능성을 시사하므로, 이들을 주거래 고객으로 안착시키기 위한 '생애 첫 금융 상품' 등의 타겟 마케팅이 유효할 것으로 판단됩니다.
+비즈니스 인사이트:
+
+단순 소득 수치보다 부채 상환 능력 및 연체 이력이 신용 등급을 가르는 결정적 잣대이므로, 이를 집중 관리하는 모니터링 시스템 구축이 중요합니다.
+
 ---
 ### AutoML – Hyperparameter Tuning – Stacking Pipe – Shap value
 
