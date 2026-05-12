@@ -32,6 +32,8 @@
 
 <img width="558" height="393" alt="image" src="https://github.com/user-attachments/assets/245d6596-d62d-41c9-bb79-98431e440094" />
 
+해석: 
+
 전체 데이터에서 Standard(2) 등급의 비중이 가장 높으며, Poor(1), Good(0) 순으로 분포되어 있습니다.
 
 클래스 간 불균형이 존재하므로, 학습 시 데이터 분할 과정에서 stratify 옵션을 적용하여 클래스 비율을 유지했습니다.
@@ -43,6 +45,8 @@
 #### 2. 변수 간 상관관계 히트맵 분석
 
 <img width="1087" height="1007" alt="image" src="https://github.com/user-attachments/assets/cfae3c48-f911-42e2-9531-9d3f48e921e2" />
+
+해석: 
 
 소득 수준, 부채 규모, 연체 여부가 신용 등급 결정에 가장 핵심적인 영향을 미치는 변수임을 시사합니다.
 
