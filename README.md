@@ -17,13 +17,13 @@
 - 데이터 클리닝 방법 : https://www.kaggle.com/code/clkmuhammed/credit-score-classification-part-1-data-cleaning#Download-Link
 ---
 ### 데이터 전처리
-비식별 변수 제거: 신용 등급과 직접적인 연관성이 낮은 ID, Customer_ID, Name, SSN 컬럼을 제거하여 모델의 노이즈를 최소화했습니다.
+- 비식별 변수 제거: 신용 등급과 직접적인 연관성이 낮은 ID, Customer_ID, Name, SSN 컬럼을 제거하여 모델의 노이즈를 최소화했습니다.
 
-결측치 처리: 수치형 변수는 평균값(Mean)으로, 범주형 변수는 최빈값(Mode)으로 대체하여 데이터 손실 없이 학습 샘플을 유지했습니다.
+- 결측치 처리: 수치형 변수는 평균값(Mean)으로, 범주형 변수는 최빈값(Mode)으로 대체하여 데이터 손실 없이 학습 샘플을 유지했습니다.
 
-인코딩 및 스케일링: 범주형 변수는 LabelEncoder를 통해 수치화하였으며, 수치형 변수는 StandardScaler를 적용하여 모든 피처가 동일한 스케일 범위 내에서 학습되도록 표준화했습니다.
+- 인코딩 및 스케일링: 범주형 변수는 LabelEncoder를 통해 수치화하였으며, 수치형 변수는 StandardScaler를 적용하여 모든 피처가 동일한 스케일 범위 내에서 학습되도록 표준화했습니다.
 
-다중공선성 해결: 상관관계 분석을 통해 Annual_Income과 Monthly_Inhead_Salary 간의 극도로 높은 상관관계(0.99)를 확인하고, 중복 정보를 제거하여 모델의 과적합 위험을 방지했습니다. 
+- 다중공선성 해결: 상관관계 분석을 통해 Annual_Income과 Monthly_Inhead_Salary 간의 극도로 높은 상관관계(0.99)를 확인하고, 중복 정보를 제거하여 모델의 과적합 위험을 방지했습니다. 
 
 ---
 ### EDA 및 해석
